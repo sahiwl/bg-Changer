@@ -5,7 +5,7 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState("")
-
+  const me = "</sahil>"
   return (
     <div className="h-screen w-screen flex justify-center">
       <div className="absolute bottom-14">
@@ -28,12 +28,17 @@ function App() {
           </div>
         </div>
         <div className="flex justify-center -mb-5">
-          <div className="mt-10 w-48 text-center bg-transparent hover:bg-teal-100 py-2 px-4 rounded-full "> <p className='text-gray-950 font-medium'>made by <a href="https://github.com/sahiwl" className=' text-sky-600 font-semibold underline'>sahil</a></p></div>
+          <div className="mt-10 w-48 text-center bg-transparent hover:bg-teal-100 py-2 px-4 rounded-xl"> <p className='text-gray-950 font-medium'>made by <a href="https://github.com/sahiwl" className=' text-sky-600 font-semibold underline'>{me}</a></p></div>
         </div>
       </div>
       
    </div> 
   )
 }
+
+
+// <div className="flex justify-center">
+//                     <div className="font-semibold">made by<a href="https://github.com/sahiwl" className="text-sky-600 font-semibold" > {me} 🐱‍👤</a>  </div>
+//                 </div>
 
 export default App
